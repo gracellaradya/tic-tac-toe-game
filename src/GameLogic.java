@@ -79,8 +79,4 @@ public class GameLogic {
         int randomPick = random.nextInt(emptyCount);
         return emptyIndexes[randomPick];
     }
-
-    public char[] getBoard() {
-        return board;
-    }
 }

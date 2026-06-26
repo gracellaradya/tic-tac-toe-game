@@ -16,8 +16,10 @@ public class MainMenuFrame extends JFrame {
         setSize(320, 280);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+        setResizable(false);
 
-        JPanel panel = new JPanel(new GridLayout(5, 1, 10, 10));
+        JPanel panel = new JPanel();
+        panel.setLayout(new GridLayout(5, 1, 10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(20, 30, 20, 30));
 
         JLabel lblWelcome = new JLabel("Selamat datang, " + currentPlayer.getUsername() + "!", SwingConstants.CENTER);
@@ -31,6 +33,7 @@ public class MainMenuFrame extends JFrame {
         panel.add(btnStatistics);
         panel.add(btnTopScorers);
         panel.add(btnExit);
+
         add(panel);
 
         btnStartGame.addActionListener(e -> {
@@ -49,6 +52,16 @@ public class MainMenuFrame extends JFrame {
             topFrame.setVisible(true);
         });
 
-        btnExit.addActionListener(e -> System.exit(0));
+        btnExit.addActionListener(e -> {
+            int confirm = JOptionPane.showConfirmDialog(
+                    this,
+                    "Yakin mau keluar?",
+                    "Konfirmasi Keluar",
+                    JOptionPane.YES_NO_OPTION
+            );
+            if (confirm == JOptionPane.YES_OPTION) {
+                System.exit(0);
+            }
+        });
     }
 }
