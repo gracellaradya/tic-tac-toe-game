@@ -37,7 +37,9 @@ Schema ada di file `database/schema.sql`
 - LoginFrame, MainMenuFrame, GameFrame, StatisticsFrame, TopScorersFrame: GUI
 
 ## Screenshots
-(lihat folder screenshots/)
+<img width="450" height="233" alt="top-scorers-window" src="https://github.com/user-attachments/assets/f7b5ec74-ecf4-4288-b0c5-0383f6c066d6" />
+<img width="343" height="217" alt="login-window" src="https://github.com/user-attachments/assets/6989fb8c-dbe8-4fc3-a7a5-7a475436d0b0" />
+<img width="395" height="469" alt="game-window" src="https://github.com/user-attachments/assets/f2e15ebf-6327-4f40-8910-55bf59991c4f" />
 
 ## Video Link
-YouTube: (isi nanti)
+YouTube: https://youtu.be/OyzlCuyhn2E
